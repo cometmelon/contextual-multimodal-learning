@@ -181,7 +181,7 @@ This project is for educational and research purposes.
 
 ---
 
-## 🙏 Acknowledgments
+## Tech stack
 
 - [Google Gemini API](https://ai.google.dev/) — Multimodal AI backbone
 - [LangGraph](https://github.com/langchain-ai/langgraph) — Agent orchestration
