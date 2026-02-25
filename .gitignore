@@ -1,0 +1,44 @@
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual Environment ──────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Environment Variables (SECRETS) ──────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── IDE / Editor ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Test / Debug artifacts ───────────────────────────────────
+test_genai.py
+test_keys.py
+
+# ── ML Model Cache ───────────────────────────────────────────
+*.pt
+*.bin
+*.safetensors
+huggingface/
+
+# ── Redis ────────────────────────────────────────────────────
+dump.rdb
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
