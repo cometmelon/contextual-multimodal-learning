@@ -1,0 +1,30 @@
+# ── Core Framework ──────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-dotenv>=1.0.1
+
+# ── Redis ───────────────────────────────────────
+redis[hiredis]>=5.1.0
+
+# ── Image Processing ───────────────────────────
+Pillow>=10.4.0
+
+# ── YouTube Transcript ─────────────────────────
+youtube-transcript-api>=0.6.2
+tenacity>=8.5.0
+
+# ── LLM / Gemini ───────────────────────────────
+google-genai>=1.14.0
+
+# ── LangGraph Agent ────────────────────────────
+langgraph>=0.2.60
+langchain-core>=0.3.43
+langchain-google-genai>=2.1.0
+
+# ── Guardrail: SigLIP ──────────────────────────
+transformers>=4.46.0
+torch>=2.6.0
+sentencepiece>=0.2.0
+
+# ── Web Search Tool ────────────────────────────
+httpx>=0.28.1

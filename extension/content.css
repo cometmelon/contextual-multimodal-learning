@@ -1,0 +1,50 @@
+/* ============================================================
+   content.css — Multimodal Video RAG Extension
+   Injected alongside content.js on YouTube watch pages.
+   These styles control the host-level toggle button.
+   All overlay/panel styles live INSIDE the Shadow DOM (content.js).
+   ============================================================ */
+
+/* The floating toggle button injected into the YouTube player */
+#mrag-toggle-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(15, 15, 15, 0.75);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#mrag-toggle-btn:hover {
+    background: rgba(99, 102, 241, 0.85);
+    border-color: rgba(99, 102, 241, 0.6);
+    transform: scale(1.1);
+}
+
+#mrag-toggle-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#mrag-toggle-btn.active {
+    background: rgba(99, 102, 241, 0.9);
+    border-color: rgba(129, 140, 248, 0.8);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+#mrag-toggle-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
